@@ -5,7 +5,7 @@ import whatsapp_logo from "../assets/whatsapp.svg";
 export const Navbar = () => {
   return (
     <div>
-      <div className="navbar_wrapper ">
+      <div className="navbar_wrapper">
         <div className="navbar_logo animate__animated animate__bounceInDown">
           <img src={logo} alt="" />
           <h2 id="logo_text">The Furry Town</h2>
