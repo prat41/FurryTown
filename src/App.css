@@ -1,0 +1,211 @@
+html,
+body {
+  /* margin: 0;
+  padding: 0; */
+
+  --primary_color: #55daeb;
+  --secondary_color: #ff5757;
+  --text_color: #ffffff;
+  --hover_color: #000000;
+  overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #76dbd9 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #76dbd9;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.button_primary {
+  border: none;
+  width: 50%;
+  background-color: var(--primary_color);
+  color: var(--text_color);
+  height: 3.5;
+  padding: 12px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon_image {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+/* Main Application Style */
+/* NAVBAR STYLE */
+
+.navbar_wrapper {
+  /* background: #fff; */
+  background: -webkit-linear-gradient(to left, #ff5757, #ff5757, #55daeb);
+  background: linear-gradient(to left, #ff5757, #ff5757, #55daeb);
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  height: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 9;
+  width: 100%;
+  /* position: fixed; */
+  top: 0;
+  color: black;
+}
+
+.navbar_logo > img {
+  width: 104px;
+  height: 104px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 32px;
+}
+.navbar_logo > img:hover {
+  width: 112px;
+  height: 112px;
+  transition: 0.5s;
+}
+.navbar_logo {
+  z-index: 9;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  float: right;
+  align-items: center;
+}
+
+.navbar_text {
+  margin: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text_color);
+  font-weight: 600;
+  line-break: auto;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.navbar_text:hover {
+  color: var(--hover_color);
+  /* font-size: 18px; */
+  font-weight: 600;
+  transition: 0.5s;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
+
+.whatsapp_logo {
+  width: 36px;
+  height: 36px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.home_image {
+  z-index: 0;
+}
+#logo_text {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  /* border: 2px solid #8cbec6; */
+  margin: 32px;
+  color: #892323;
+  padding: 4px;
+  border-image: linear-gradient(
+      90deg,
+      var(--primary_color),
+      var(--secondary_color)
+    )
+    1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+/* HOME STYLE */
+
+.box-1 {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/parallax-1.jpeg");
+  display: table;
+  background-attachment: fixed;
+}
+.box-2 {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  background-image: url("https://images.pexels.com/photos/7725990/pexels-photo-7725990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.box-3 {
+  height: 25vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: table;
+  vertical-align: middle;
+  background-attachment: fixed;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  /* background-image:url("./assets/furry_town_pet_group.jpeg"); */
+}
+.parallax_text {
+  color: #fff;
+  margin: 0px;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text_boxshadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+  color: var(--hover_color);
+  border-radius: 8px;
+  padding: 4rem;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: 800;
+  width: 64vw;
+  margin: 6vw;
+}
+.pet_home{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.pet_home > img {
+  height: 44px;
+  padding: 8px;
+  border-radius: 50vh;
+  border: 2px solid var(--primary_color);
+  margin: 8px;
+}

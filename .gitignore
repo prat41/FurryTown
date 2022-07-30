@@ -1,0 +1,37 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/package-lock.json
+# testing
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+stats.json
+
+#vscode settings
+.vscode/
+dump.rdb
+
+
+.nyc_output
+coverage
+
+#trace files
+*.zip
+state.json
+reports.json
+test-results/
+
